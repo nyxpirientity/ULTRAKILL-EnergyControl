@@ -7,13 +7,13 @@ namespace Nyxpiri.ULTRAKILL.EnergyControl
 {
     public static class EnergyControlPlayerComponentsExtension
     {
-        public static EnergyControl GetEnergyControl(this PlayerComponents player)
+        public static EnergyController GetEnergyController(this PlayerComponents player)
         {
-            return player.GetMonoByIndex<EnergyControl>(EnergyControl.MonoRegistrarIdx);
+            return player.GetMonoByIndex<EnergyController>(EnergyController.MonoRegistrarIdx);
         }
     }
 
-    public class EnergyControl : MonoBehaviour
+    public class EnergyController : MonoBehaviour
     {
         public class CostScalar
         {
@@ -74,7 +74,7 @@ namespace Nyxpiri.ULTRAKILL.EnergyControl
 
         internal static void Initialize()
         {
-            MonoRegistrarIdx = PlayerComponents.MonoRegistrar.Register<EnergyControl>();
+            MonoRegistrarIdx = PlayerComponents.MonoRegistrar.Register<EnergyController>();
         }
     }
 }
