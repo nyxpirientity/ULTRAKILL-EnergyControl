@@ -10,6 +10,7 @@ namespace Nyxpiri.ULTRAKILL.EnergyControl
         protected void Awake()
         {
             Log.Initialize(Logger);
+            EnergyController.Initialize();
         }
 
         protected void Start()
