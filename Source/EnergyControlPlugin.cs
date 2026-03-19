@@ -3,7 +3,7 @@ using BepInEx;
 
 namespace Nyxpiri.ULTRAKILL.EnergyControl
 {
-    [BepInPlugin("com.nyxpiri.bepinex.plugins.ultrakill.energy-control", "Energy Control", "0.0.0.1")]
+    [BepInPlugin("nyxpiri.ultrakill.energy-control", "Energy Control", "0.0.0.1")]
     [BepInProcess("ULTRAKILL.exe")]
     public class EnergyControlPlugin : BaseUnityPlugin
     {
